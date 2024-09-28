@@ -123,7 +123,7 @@ function atualizarNomeTemp(event:Event) :void {
   <hr>
 
   <ul>
-    <li v-for="nome in estado.nomes">
+    <li v-for="(nome,index) in estado.nomes" :key="index">
       {{ nome }}
     </li>
   </ul>
